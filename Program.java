@@ -1,7 +1,8 @@
 public class Program {
     public static void main (String[] args){
-        Exercicio01.executar();
-        Exercicio02.executar();
+        //Exercicio01.executar();
+        //Exercicio02.executar();
+        Exercicio03.executar();
 
         }
     }
