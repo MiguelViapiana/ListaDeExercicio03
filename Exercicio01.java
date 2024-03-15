@@ -1,5 +1,5 @@
 public class Exercicio01 {
-    public void executar(){
+    public static void executar(){
 
         Aluno novoAluno = new Aluno();
         System.out.println("Digite os dados do aluno:\n");
@@ -12,12 +12,6 @@ public class Exercicio01 {
         System.out.println("Nome: "+ novoAluno.nome);
         System.out.println("Média: "+ notaFinal);
 
-    }
-    public class Aluno {
-        public String nome;
-        public Double nota1;
-        public double nota2;
-        public double nota3;  
     }
     
 
