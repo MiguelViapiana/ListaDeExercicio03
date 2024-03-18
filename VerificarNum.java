@@ -19,7 +19,7 @@ public class VerificarNum {
         }
         System.out.println("Os números que estão no intervalo entre 10 e 150 são: ");
         for(i =0; i < p; i++){
-            System.out.print(numIntervalo[i]+" " );
+            System.out.print(numIntervalo[i]+"  " );
         }
     }
 }
