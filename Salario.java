@@ -1,6 +1,6 @@
 public class Salario {
-    public double[] salarioInicial = new double[8];
-    public double[] salarioFinal = new double[8];
+    public double[] salarioInicial = new double[584];
+    public double[] salarioFinal = new double[584];
     public double salarioMinimo;
 
     public void ajusteSalario(){
@@ -11,7 +11,7 @@ public class Salario {
         double dezSalariosMin = salarioMinimo * 10;
         double vinteSalariosMin = salarioMinimo * 20;
 
-        for(int i =0; i < 8; i++){
+        for(int i =0; i < 584; i++){
             System.out.printf("Digite o salário do %d° funcionário: ", (i+1));
             salarioInicial[i] = Prompt.lerDecimal();
 
@@ -30,7 +30,7 @@ public class Salario {
             }
         }
         System.out.println("\n--- Salário Ajustado ---\n");
-        for(int i=0; i < 8; i++){
+        for(int i=0; i < 584; i++){
             System.out.printf("Funcionario[%d]: Salario inicial: R$ %.2f  Salario final: R$ %.2f\n", (i+1), salarioInicial[i], salarioFinal[i]);
         }
 
