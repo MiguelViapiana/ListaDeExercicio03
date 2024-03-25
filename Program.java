@@ -26,7 +26,6 @@ public class Program {
         Exercicio24.executar();
         Exercicio25.executar();
         Exercicio26.executar();
-
         }
     }
 

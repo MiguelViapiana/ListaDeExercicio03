@@ -5,6 +5,6 @@ public class Exercicio04 {
         dol.cotação = Prompt.lerDecimal("Digite a cotação atual do dólar para real: ");
         dol.qtdDol = Prompt.lerDecimal("digite quantos dolares você possui:");
         dol.conversãoDolar(dol.qtdDol);
-        System.out.printf("O resultado da conversão é de R$ %.2f", dol.valorFinal);
+        System.out.printf("O resultado da conversão é de R$ %.2f\n", dol.valorFinal);
     }
 }
