@@ -3,8 +3,8 @@ public class Imposto {
     public double precoComImposto;
     public double precoFinal;
 
-    public void calcPrecoFinal(double precoFab){
-        precoComImposto = precoFab * 1.45;
+    public void calcPrecoFinal(){
+        precoComImposto = precoDeFabrica * 1.45;
         precoFinal = precoComImposto * 1.28;
     }
 }

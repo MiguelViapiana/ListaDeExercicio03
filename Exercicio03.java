@@ -5,8 +5,9 @@ public class Exercicio03 {
         vendedor.nome = Prompt.lerLinha("Nome: ");
         vendedor.salFix = Prompt.lerDecimal("Salário fixo: ");
         vendedor.totalVendas = Prompt.lerInteiro("Total de vendas(em dinheiro): ");
-        double comissao = vendedor.totalVendas * 0.15;
-        System.out.printf("Nome: %s\nSalário fixo: %.2f\nSalário final: %.2f", vendedor.nome, vendedor.salFix,(vendedor.salFix + comissao));
+        vendedor.calcSalFinal();
+
+        System.out.printf("Nome: %s\nSalário fixo: %.2f\nSalário final: %.2f", vendedor.nome, vendedor.salFix, vendedor.salFinal);
     }
 }
 

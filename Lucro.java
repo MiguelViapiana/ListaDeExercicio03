@@ -3,7 +3,7 @@ public class Lucro {
     public double acresimo;
     public double valorFinal;
 
-    public void calcLucro(double precoCusto, double acres){
-        valorFinal = precoCusto+(precoCusto * (acres/100));
+    public void calcLucro(){
+        valorFinal = precoDeCusto+(precoDeCusto * (acresimo/100));
     }
 }

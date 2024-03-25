@@ -7,6 +7,8 @@ public class Exercicio08 {
         aprov.nota1 = Prompt.lerDecimal();
         aprov.nota2 = Prompt.lerDecimal();
         aprov.nota3 = Prompt.lerDecimal();
-        aprov.calcMedia(aprov.nota1, aprov.nota2, aprov.nota3);
+        aprov.calcMedia();
+        System.out.println("Nome: "+ aprov.nome);
+        System.out.println(aprov.situacao);
     }
 }

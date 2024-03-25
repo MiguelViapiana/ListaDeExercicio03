@@ -2,7 +2,7 @@ public class Prestacao {
     public double valorFinalCompra;
     public double prestação;
 
-    public void valorPrestação(double valorFinalCompra){
+    public void valorPrestação(){
         prestação = valorFinalCompra/5;
     }
 }

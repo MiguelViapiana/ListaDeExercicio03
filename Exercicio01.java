@@ -7,10 +7,10 @@ public class Exercicio01 {
         novoAluno.nota1 = Prompt.lerDecimal("Digite a primeira nota: ");
         novoAluno.nota2  = Prompt.lerDecimal("Digite a segunda nota: ");
         novoAluno.nota3 = Prompt.lerDecimal("Digite a terceira nota: ");
-        double notaFinal = (novoAluno.nota1 + novoAluno.nota2 + novoAluno.nota3) / 3;
+        novoAluno.calcNotafinal();
 
         System.out.println("Nome: "+ novoAluno.nome);
-        System.out.println("Média: "+ notaFinal);
+        System.out.println("Média: "+ novoAluno.notaFinal);
 
     }
     

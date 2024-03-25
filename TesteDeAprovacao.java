@@ -4,19 +4,19 @@ public class TesteDeAprovacao {
     public double nota2;
     public double nota3;
     public double notaF;
+    public String situacao;
 
-    public void calcMedia(double n1, double n2, double n3){
-        notaF = (n1 + n1 + n3)/3;
+    public void calcMedia(){
+        notaF = (nota1 + nota2 + nota3)/3;
             if (notaF < 0 || notaF > 10) {
-                System.out.println("[ERRO] notas inválidas!!");
+                situacao ="[ERRO] notas inválidas!!";
             }else{
-                System.out.println("Nome: "+ nome);
                 if (notaF >= 7) {
-                System.out.println("Situação: APROVADO!!"); 
+                situacao ="Situação: APROVADO!!";
             }else if(notaF <= 5){
-                System.out.println("Situação: REPROVADO!!");
+                situacao ="Situação: REPROVADO!!";
             }else{
-                System.out.println("Situação: RECUPERAÇÃO!!");
+                situacao="Situação: RECUPERAÇÃO!!";
             }
         }            
     }
