@@ -8,11 +8,7 @@ public class ClassificacaoNota {
         public double media;
     
         public void calcMediaClassificacao(){
-            nome = Prompt.lerLinha("Digite o nome do aluno: ");
-            matricula = Prompt.lerInteiro("Digie o número da matrícula");
-            lab = Prompt.lerDecimal("Digite a nota do Laborátorio: ");
-            avsem = Prompt.lerDecimal("Digite a nota da Avaliação Semestral: ");
-            examfinal = Prompt.lerDecimal("Digite a nota do Exame Final: ");
+            
             if (lab < 0 || lab >10 || avsem < 0 || avsem >10 || examfinal < 0 || examfinal >10) {
                 System.out.println("Nota inválida!!");
             }else{
@@ -28,7 +24,6 @@ public class ClassificacaoNota {
                 }else{
                     classificaçao = "A";
                 }
-                System.out.printf("Nome: %s | Matrícula: %d | Nota Final: %.1f | Classificação: %s",nome, matricula, media, classificaçao);
             }
 
             

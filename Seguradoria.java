@@ -5,11 +5,8 @@ public class Seguradoria {
     public String grupoDeRisco;
 
     public void calcSeguro(){
-        nome = Prompt.lerLinha("Digite o seu nome: ");
-        idade = Prompt.lerInteiro("Digite a sua idade: ");
-        grupoDeRisco = Prompt.lerLinha("Digite o seu grupo de risco(Baixo, Medio, Alto)");
         if (idade >= 17 && idade <=70) {
-            if(grupoDeRisco.equals("Baixo") || grupoDeRisco.equals("Medio") || grupoDeRisco.equals("Alto")){
+            if(grupoDeRisco.toLowerCase().equals("baixo") || grupoDeRisco.toLowerCase().equals("medio") || grupoDeRisco.toLowerCase().equals("alto")){
                if (idade <=20){
                     if (grupoDeRisco.equals("Baixo")) {
                         categoria = 1;
@@ -51,7 +48,6 @@ public class Seguradoria {
                         categoria = 9;
                     }
                 }
-                System.out.printf("Nome: %s | Idade: %d | Grupo de Risco: %s | Categoria: %d", nome, idade, grupoDeRisco, categoria);
             }else{
                 System.out.println("Grupo de risco inválido!!");
             }

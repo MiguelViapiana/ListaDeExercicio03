@@ -11,9 +11,9 @@ public class Exercicio10 {
             idade.idade[p] = Prompt.lerInteiro();
         }
         idade.verificarIdades();
-        idade.maiorMenor = new String[idade.i];
+        
         for(int p =0; p < idade.i; p++){
-            System.out.printf("A pessoa [%d] é %s\n", idade.i, idade.maiorMenor);
+            System.out.printf("A pessoa [%d] é %s\n", p+1, idade.maiorMenor[p]);
         }
         
         
