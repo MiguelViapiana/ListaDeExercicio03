@@ -1,10 +1,20 @@
 package br.edu.up.models;
 
 public class Prestacao {
-    public double valorFinalCompra;
-    public double prestação;
+    private double valorFinalCompra;
+    private double prestação;
 
     public void valorPrestação(){
         prestação = valorFinalCompra/5;
     }
+
+    public void setValorFinalCompra(double valorFinalCompra) {
+        this.valorFinalCompra = valorFinalCompra;
+    }
+
+    public double getPrestação() {
+        return prestação;
+    }
+    
+    
 }

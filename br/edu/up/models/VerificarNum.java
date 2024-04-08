@@ -1,9 +1,9 @@
 package br.edu.up.models;
 
 public class VerificarNum {
-    public double[] num = new double[80];
-    public double[] numIntervalo = new double[80];
-    public int i, p;
+    private double[] num = new double[80];
+    private double[] numIntervalo = new double[80];
+    private int i, p;
 
     public void analisarNums(){
         p =0;
@@ -16,4 +16,19 @@ public class VerificarNum {
             }
         }
     }
+
+    public void setNum(double d, double num) {
+        this.num[(int) d] = num;
+    }
+
+    public double getNumIntervalo(int num) {
+        return numIntervalo[num];
+    }
+
+    public int getP() {
+        return p;
+    }
+    
+    
+    
 }

@@ -1,11 +1,24 @@
 package br.edu.up.models;
 
 public class Dolar {
-    public double cotação;
-    public double qtdDol;
-    public double valorFinal;
+    private double cotação;
+    private double qtdDol;
+    private double valorFinal;
 
     public void conversãoDolar(){
         valorFinal = qtdDol * cotação;
     }
+
+    public void setCotação(double cotação) {
+        this.cotação = cotação;
+    }
+
+    public void setQtdDol(double qtdDol) {
+        this.qtdDol = qtdDol;
+    }
+
+    public double getValorFinal() {
+        return valorFinal;
+    }
+    
 }

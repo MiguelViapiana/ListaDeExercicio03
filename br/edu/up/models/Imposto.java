@@ -9,4 +9,13 @@ public class Imposto {
         precoComImposto = precoDeFabrica * 1.45;
         precoFinal = precoComImposto * 1.28;
     }
+
+    public void setPrecoDeFabrica(double precoDeFabrica) {
+        this.precoDeFabrica = precoDeFabrica;
+    }
+
+    public double getPrecoFinal() {
+        return precoFinal;
+    }
+    
 }
