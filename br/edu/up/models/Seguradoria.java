@@ -1,10 +1,10 @@
 package br.edu.up.models;
 
 public class Seguradoria {
-    public String nome;
-    public int idade;
-    public int categoria;
-    public String grupoDeRisco;
+    private String nome;
+    private int idade;
+    private int categoria;
+    private String grupoDeRisco;
 
     public void calcSeguro(){
         if (idade >= 17 && idade <=70) {
@@ -58,4 +58,46 @@ public class Seguradoria {
             System.out.println("Idade inválida para seguro!");
         }
     }
+
+    public void setNome(String nome) {
+        
+
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        if (idade >= 17 && idade <=70) {
+            this.idade = idade;
+        }else{
+            this.idade = 0;
+        }
+        
+    }
+
+    public void setGrupoDeRisco(String grupoDeRisco) {
+        if(grupoDeRisco.toLowerCase().equals("baixo") || grupoDeRisco.toLowerCase().equals("medio") || grupoDeRisco.toLowerCase().equals("alto")){
+            this.grupoDeRisco = grupoDeRisco;
+        }else{
+            this.grupoDeRisco = "";
+        }
+        
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public int getCategoria() {
+        return categoria;
+    }
+
+    public String getGrupoDeRisco() {
+        return grupoDeRisco;
+    }
+    
+    
 }

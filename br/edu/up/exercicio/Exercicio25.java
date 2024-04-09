@@ -6,12 +6,12 @@ public class Exercicio25 {
         System.out.println("--- Classificação das Notas ---");
         System.out.println("Digite os dados do aluno: ");
         ClassificacaoNota classNota = new ClassificacaoNota();
-        classNota.nome = Prompt.lerLinha("Digite o nome do aluno: ");
-        classNota.matricula = Prompt.lerInteiro("Digie o número da matrícula");
-        classNota.lab = Prompt.lerDecimal("Digite a nota do Laborátorio: ");
-        classNota.avsem = Prompt.lerDecimal("Digite a nota da Avaliação Semestral: ");
-        classNota.examfinal = Prompt.lerDecimal("Digite a nota do Exame Final: ");
+        classNota.setNome(Prompt.lerLinha("Digite o nome do aluno: "));
+        classNota.setMatricula(Prompt.lerInteiro("Digie o número da matrícula"));
+        classNota.setLab(Prompt.lerDecimal("Digite a nota do Laborátorio: "));
+        classNota.setAvsem(Prompt.lerDecimal("Digite a nota da Avaliação Semestral: "));
+        classNota.setExamfinal(Prompt.lerDecimal("Digite a nota do Exame Final: "));
         classNota.calcMediaClassificacao();
-        System.out.printf("Nome: %s | Matrícula: %d | Nota Final: %.1f | Classificação: %s\n",classNota.nome, classNota.matricula, classNota.media, classNota.classificaçao);
+        System.out.printf("Nome: %s | Matrícula: %d | Nota Final: %.1f | Classificação: %s\n",classNota.getNome(), classNota.getMatricula(), classNota.getMedia(), classNota.getClassificaçao());
     }
 }

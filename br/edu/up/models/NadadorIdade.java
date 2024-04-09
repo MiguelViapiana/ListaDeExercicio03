@@ -1,8 +1,8 @@
 package br.edu.up.models;
 
 public class NadadorIdade {
-    public int idade;
-    public String categoria;
+    private int idade;
+    private String categoria;
 
     public void categoriaIdade() {
 
@@ -20,4 +20,13 @@ public class NadadorIdade {
             System.out.println("Idade fora da faixa etária!");
         }
     }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+    
 }

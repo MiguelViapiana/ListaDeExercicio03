@@ -1,10 +1,10 @@
 package br.edu.up.models;
 
 public class CursoCienciaComputacao {
-    public double lab;
-    public double avsem;
-    public double examfinal;
-    public double media;
+    private double lab;
+    private double avsem;
+    private double examfinal;
+    private double media;
 
     public void calcMediaPonderada(){
         
@@ -15,5 +15,22 @@ public class CursoCienciaComputacao {
         }
         
     }
+
+    public void setLab(double lab) {
+        this.lab = lab;
+    }
+
+    public void setAvsem(double avsem) {
+        this.avsem = avsem;
+    }
+
+    public void setExamfinal(double examfinal) {
+        this.examfinal = examfinal;
+    }
+
+    public double getMedia() {
+        return media;
+    }
+    
 
 }

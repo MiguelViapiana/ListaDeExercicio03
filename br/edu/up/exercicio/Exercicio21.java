@@ -6,8 +6,8 @@ public class Exercicio21 {
         System.out.println("--- Categoria de Natação ---");
         NadadorIdade nat = new NadadorIdade();
         System.out.println("Digite a sua idade: ");
-        nat.idade = Prompt.lerInteiro();
+        nat.setIdade(Prompt.lerInteiro());
         nat.categoriaIdade();
-        System.out.printf("A categoria do nadador é: %s", nat.categoria);
+        System.out.printf("A categoria do nadador é: %s", nat.getCategoria());
     }
 }
