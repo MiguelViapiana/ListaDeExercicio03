@@ -6,21 +6,21 @@ public class Exercicio17 {
         System.out.println("--- Reajuste e listamento dos funcionários ---");
         DadosFuncionario dados = new DadosFuncionario();
         System.out.println("Digite o salário mínimo: ");
-        dados.salarioMinimo = Prompt.lerDecimal();
+        dados.setSalarioMinimo(Prompt.lerDecimal());
 
         for(int i =0; i < 8; i++){
             System.out.printf("Digite o nome do %d° funcionário: ", (i+1));
-            dados.nome[i] = Prompt.lerLinha();
+            dados.setNome(i, Prompt.lerLinha());
 
             System.out.printf("Digite o salário do %d° funcionário: ", (i+1));
-            dados.salarioInicial[i] = Prompt.lerDecimal();
+            dados.setSalarioInicial(i, Prompt.lerDecimal());
             dados.ajusteSalario(i);
 
         }
         System.out.println("\n--- Salário Ajustado ---\n");
         for(int i=0; i < 8; i++){
-            System.out.printf("Funcionario[%d]: Nome: %s | Salario inicial: R$ %.2f | Salario final: R$ %.2f\n\n",(i+1),dados.nome[i], dados.salarioInicial[i], dados.salarioFinal[i]);
+            System.out.printf("Funcionario[%d]: Nome: %s | Salario inicial: R$ %.2f | Salario final: R$ %.2f\n\n",(i+1),dados.getNome(i), dados.getSalarioInicial(i), dados.getSalarioFinal(i));
         }
-        System.out.printf("A empresa vai aumentar R$ %.2f na folha de pagamento!\n"); //dados.totalReajuste);
+        System.out.printf("A empresa vai aumentar R$ %.2f na folha de pagamento!\n",dados.getTotalReajuste());
     }
 }

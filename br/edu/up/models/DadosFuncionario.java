@@ -1,10 +1,10 @@
 package br.edu.up.models;
 
 public class DadosFuncionario {
-    public String[] nome = new String[8];
-    public double[] salarioInicial = new double[8];
-    public double[] salarioFinal = new double[8];
-    public double salarioMinimo;
+    private String[] nome = new String[8];
+    private double[] salarioInicial = new double[8];
+    private double[] salarioFinal = new double[8];
+    private double salarioMinimo;
     double totalReajuste = 0;
 
     public void ajusteSalario(int i) {
@@ -31,4 +31,37 @@ public class DadosFuncionario {
         }
 
     }
+
+    public void setSalarioMinimo(double salarioMinimo) {
+        this.salarioMinimo = salarioMinimo;
+    }
+
+    public String getNome(int num) {
+        return nome[num];
+    }
+
+    public void setNome(int num,String nome) {
+        this.nome[num] = nome;
+    }
+
+    public double getSalarioInicial(int num) {
+        return salarioInicial[num];
+    }
+
+    public void setSalarioInicial(int num, double salarioInicial) {
+        this.salarioInicial[num] = salarioInicial;
+    }
+
+
+    public double getSalarioFinal(int num) {
+        return salarioFinal[num];
+    }
+
+    public double getTotalReajuste() {
+        return totalReajuste;
+    }
+    
+
+    
+    
 }

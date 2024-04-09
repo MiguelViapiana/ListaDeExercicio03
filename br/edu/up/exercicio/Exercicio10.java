@@ -6,17 +6,18 @@ public class Exercicio10 {
         IdadeVerif idade = new IdadeVerif();
         System.out.println("---Verificador de Idades ---");
         System.out.println("Digite quantas pessoas quer analisar: ");
-        idade.i = Prompt.lerInteiro();
+        idade.setI(Prompt.lerInteiro());
+        int[] idades = new int[idade.getI()];
+
         System.out.println("Digite as idades das pessoas: ");
-        idade.idade = new int[idade.i];
-        for(int p =0; p<idade.i; p++){
+        for(int p =0; p<idade.getI(); p++){
             System.out.printf("%d° pessoa: ",  (p+1));
-            idade.idade[p] = Prompt.lerInteiro();
+            idades[p] = Prompt.lerInteiro();
         }
-        idade.verificarIdades();
+        idade.verificarIdades(idades);
         
-        for(int p =0; p < idade.i; p++){
-            System.out.printf("A pessoa [%d] é %s\n", p+1, idade.maiorMenor[p]);
+        for(int p =0; p < idade.getI(); p++){
+            System.out.printf("A pessoa [%d] é %s\n", p+1, idade.getMaiorMenor(p));
         }
         
         

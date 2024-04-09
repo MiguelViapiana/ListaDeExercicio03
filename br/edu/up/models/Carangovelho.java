@@ -1,13 +1,13 @@
 package br.edu.up.models;
 
 public class Carangovelho {
-    public int totalCarrosAte2000 = 0;
-    public int totalGeral = 0;
-    public double valor;
-    public double valorFinal;
-    public int ano;
-    public double descontos;
-    public String continuar;
+    private int totalCarrosAte2000 = 0;
+    private int totalGeral = 0;
+    private double valor;
+    private double valorFinal;
+    private int ano;
+    private double descontos;
+    private String continuar;
 
     public void gerarDesconto() {
 
@@ -25,5 +25,40 @@ public class Carangovelho {
         valorFinal = valor -(descontos);
         totalGeral++;
     }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public double getValorFinal() {
+        return valorFinal;
+    }
+
+    public double getDescontos() {
+        return descontos;
+    }
+
+    
+    public void setContinuar(String continuar) {
+        this.continuar = continuar;
+    }
+
+    public String getContinuar() {
+        return continuar;
+    }
+
+    public int getTotalCarrosAte2000() {
+        return totalCarrosAte2000;
+    }
+
+    public int getTotalGeral() {
+        return totalGeral;
+    }
+    
+    
 
 }

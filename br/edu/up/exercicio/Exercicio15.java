@@ -7,14 +7,14 @@ public class Exercicio15 {
         System.out.println("Insira os dados do veículo: ");
         Carango carango = new Carango();
         System.out.println("\nDigite o preço do carro: ");
-        carango.precoCarro = Prompt.lerDecimal();
+        carango.setPrecoCarro(Prompt.lerDecimal());
 
         System.out.println("Qual tipo de combustível o carro usa(alcool, gasolina e diesel): ");
-        carango.combustivel = Prompt.lerLinha();
+        carango.setCombustivel(Prompt.lerLinha());  
         carango.calcDesconto();
         carango.calcPrecoFinal();
         
-        System.out.printf("O total de desconto foi de R$ %.2f\n",carango.precoCarro* carango.desconto);
-        System.out.printf("E o valor final é de: R$ %.2f", carango.precoFinal);
+        System.out.printf("O total de desconto foi de R$ %.2f\n",carango.getPrecoCarro()* carango.getDesconto());
+        System.out.printf("E o valor final é de: R$ %.2f", carango.getPrecoFinal());
     }
 }

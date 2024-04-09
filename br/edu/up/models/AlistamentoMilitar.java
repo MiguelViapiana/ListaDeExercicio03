@@ -1,13 +1,13 @@
 package br.edu.up.models;
 
 public class AlistamentoMilitar {
-    public String[] nome;
-    public String[] sexo;
-    public int[] idade;
-    public int[] saude;
-    public boolean[] apto;
-    public int qtdpessoas;
-    public int qtdAptas = 0;
+    private String[] nome;
+    private String[] sexo;
+    private int[] idade;
+    private int[] saude;
+    private boolean[] apto;
+    private int qtdpessoas;
+    private int qtdAptas = 0;
 
     public void declararArrays() {
         nome = new String[qtdpessoas];
@@ -37,5 +37,54 @@ public class AlistamentoMilitar {
             System.out.println("Entrada de dados inválida, tente novamente.");
         }
     }
+
+    public int getQtdpessoas() {
+        return qtdpessoas;
+    }
+
+    public void setQtdpessoas(int qtdpessoas) {
+        this.qtdpessoas = qtdpessoas;
+    }
+
+    public String getNome(int num) {
+        return nome[num];
+    }
+
+    public void setNome( int num,String nome) {
+        this.nome[num] = nome;
+    }
+
+    public String getSexo(int num) {
+        return sexo[num];
+    }
+
+    public void setSexo(int num, String sexo) {
+        this.sexo[num] = sexo;
+    }
+
+    public void setIdade(int num ,int idade) {
+        this.idade[num] = idade;
+    }
+
+    public void setSaude( int num,int saude) {
+        this.saude[num] = saude;
+    }
+
+    public boolean getApto(int num) {
+        return apto[num];
+    }
+
+    public void setQtdAptas(int num) {
+        this.qtdAptas += num;
+    }
+
+    public int getQtdAptas() {
+        return qtdAptas;
+    }
+    
+    
+    
+    
+    
 
 }
