@@ -4,7 +4,7 @@ import br.edu.up.models.*;
 public class Exercicio09 {
     public static void executar(){
         
-        VerificarNum verifnum = new VerificarNum();
+        Numero verifnum = new Numero();
         System.out.println("Digite 80 números quisquer: ");
         for(int i =0; i< 80; i++){
             System.out.printf("Digite o %d° número: ", (i+1));

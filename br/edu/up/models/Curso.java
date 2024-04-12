@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class CursoCienciaComputacao {
+public class Curso {
     private double lab;
     private double avsem;
     private double examfinal;

@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class NomeSex {
+public class Pessoa {
     private String[] nome = new String[5];
     private String[] sexo = new String[5];
     private int qtdM = 0;

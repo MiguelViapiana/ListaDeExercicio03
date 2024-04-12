@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class PesoIdeal {
+public class PesoCorporal {
     private String sexo;
     private double altura;
     private int idade;

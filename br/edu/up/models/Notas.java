@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class TesteDeAprovacao {
+public class Notas {
     public String nome;
     public double nota1;
     public double nota2;

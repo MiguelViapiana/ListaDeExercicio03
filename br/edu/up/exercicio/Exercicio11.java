@@ -5,7 +5,7 @@ public class Exercicio11 {
     public static void executar(){
         System.out.println("--- Lista de nome sexo das pessoas ---");
         System.out.println("Digite o nome e sexo(M ou F) das pessoas: ");
-        NomeSex nomeSex = new NomeSex();
+        Pessoa nomeSex = new Pessoa();
         for(int i=0; i <5; i++){
             System.out.printf("Nome da %d° pessoa: ", (i+1));
             nomeSex.setNome(i, Prompt.lerLinha());

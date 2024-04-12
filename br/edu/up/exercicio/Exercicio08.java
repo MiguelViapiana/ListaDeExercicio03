@@ -3,7 +3,7 @@ import br.edu.up.models.*;
 
 public class Exercicio08 {
     public static void executar(){
-        TesteDeAprovacao aprov = new  TesteDeAprovacao();
+        Notas aprov = new  Notas();
         System.out.println("Digite o nome: ");
         aprov.setNome(Prompt.lerLinha());
         System.out.println("digte 3 notas: ");

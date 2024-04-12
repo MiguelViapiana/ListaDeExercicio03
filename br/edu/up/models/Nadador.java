@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class NadadorIdade {
+public class Nadador {
     private int idade;
     private String categoria;
 

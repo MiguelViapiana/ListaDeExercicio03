@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class DadosFuncionario {
+public class Funcionario {
     private String[] nome = new String[8];
     private double[] salarioInicial = new double[8];
     private double[] salarioFinal = new double[8];

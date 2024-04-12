@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class VerificarNum {
+public class Numero {
     private double[] num = new double[80];
     private double[] numIntervalo = new double[80];
     private int i, p;

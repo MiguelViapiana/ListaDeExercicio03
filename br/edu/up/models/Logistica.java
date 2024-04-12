@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class ProdutoLucroPrej {
+public class Logistica {
     private double[] precoCusto = new double[40];
     private double[] precoVenda = new double[40];
     private double somaPrecoCusto=0;

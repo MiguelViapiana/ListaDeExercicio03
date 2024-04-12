@@ -4,7 +4,7 @@ import br.edu.up.models.*;
 public class Exercicio23 {
     public static void executar(){
         System.out.println("--- Peso Ideal ---");
-        PesoIdeal peso = new PesoIdeal();
+        PesoCorporal peso = new PesoCorporal();
         peso.setSexo(Prompt.lerLinha("Digite o sexo(M-F)"));
         peso.setAltura(Prompt.lerDecimal("Digite a sua altura(0.00)"));
         peso.setIdade(Prompt.lerInteiro("Digite a sua idade: "));

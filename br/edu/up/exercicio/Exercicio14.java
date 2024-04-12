@@ -5,7 +5,7 @@ public class Exercicio14 {
     public static void executar(){
         int i=0;
         System.out.println("--- Lucro e prejuízo ---");
-        ProdutoLucroPrej produto = new ProdutoLucroPrej();
+        Logistica produto = new Logistica();
         for(i=0; i<40; i++){
             System.out.printf("Produto %d:\n", i+1);
 

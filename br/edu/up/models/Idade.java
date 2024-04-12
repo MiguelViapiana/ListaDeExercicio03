@@ -1,6 +1,6 @@
 package br.edu.up.models;
 
-public class IdadeVerif {
+public class Idade {
     private int i;
     private int[] idade;
     private String[] maiorMenor;
