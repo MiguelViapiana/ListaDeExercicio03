@@ -5,7 +5,7 @@ public class Salario {
     private double[] salarioFinal = new double[5];
     private double salarioMinimo;
 
-    public void ajusteSalario(int i) {
+    public void ajustarSalario(int i) {
 
         double tresSalariosMin = salarioMinimo * 3;
         double dezSalariosMin = salarioMinimo * 10;

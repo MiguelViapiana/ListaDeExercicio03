@@ -4,7 +4,7 @@ public class Prestacao {
     private double valorFinalCompra;
     private double prestação;
 
-    public void valorPrestação(){
+    public void calcvValorPrestação(){
         prestação = valorFinalCompra/5;
     }
 
